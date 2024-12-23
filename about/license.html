@@ -16,27 +16,42 @@
         }
         .container {
             margin-top: 40px;
-            max-width: 1200px;
+            max-width: 900px;
             padding: 20px;
             box-sizing: border-box;
-        }
-        .license-content {
-            background-color: #fffaf0;
-            padding: 30px;
+            background: #FAF3E0;
             border: 1px solid #d2b48c;
             border-radius: 10px;
-            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #6b4226;
             text-align: center;
             margin-bottom: 20px;
         }
-        p, ul {
+        p {
             text-align: justify;
+            line-height: 1.8;
+        }
+        .section-header {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #4A321D;
         }
         ul {
             padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -46,23 +61,42 @@
 
     <!-- Main Content -->
     <main>
-    <div class="container">
-        <h2>License and Permissions</h2>
-        <div class="license-content">
+        <div class="container">
+            <h2>License and Permissions</h2>
+
             <p>
-                The content provided by <strong>The Maktaba Project</strong> is available for personal, educational, and non-commercial use. Redistribution and reproduction are permitted under the following conditions:
+                The content available on <strong>The Maktaba Project</strong> is sourced from publicly available open-source repositories, archives, and public domain collections. The website owners do not claim ownership of any of the materials hosted on this platform unless explicitly stated otherwise.
             </p>
-            <ul>
-                <li>Proper attribution must be given to The Maktaba Project.</li>
-                <li>Content must not be altered or misrepresented in any way.</li>
-                <li>Commercial use requires prior written permission.</li>
-            </ul>
+
+            <div class="section-header">Content Usage</div>
             <p>
-                For any licensing inquiries or permissions, please contact us via the <a href="../about/contact.html">Contact Us</a> page.
+                - All texts, books, and resources shared on this website are intended for **educational, research, and personal use only**.<br>
+                - Redistribution, reproduction, or commercial use of the content is subject to the licensing terms of the original source repositories.<br>
+                - Users are encouraged to verify the copyright status of materials before reuse.
+            </p>
+
+            <div class="section-header">Ownership Disclaimer</div>
+            <p>
+                The Maktaba Project does not own any of the content displayed on the platform unless explicitly mentioned. All content is provided in good faith, sourced from publicly accessible repositories, and shared with the intent to preserve and promote Urdu literature.
+            </p>
+
+            <div class="section-header">Copyright Concerns</div>
+            <p>
+                If you believe that any material available on this website infringes upon your copyright or intellectual property rights, please contact us immediately. Upon verification of the claim, appropriate action, including content removal, will be taken promptly.
+            </p>
+
+            <div class="contact-info">
+                <strong>Contact Us:</strong><br>
+                Email: <a href="mailto:kutubkhanaproject@gmail.com">kutubkhanaproject@gmail.com</a>
+            </div>
+
+            <div class="section-header">Licensing Note</div>
+            <p>
+                By accessing and using this website, you acknowledge that The Maktaba Project serves as a repository for public domain and open-source content. The project operates on a **non-commercial, educational basis** and relies on community contributions to expand its archives.
             </p>
         </div>
-    </div>
     </main>
+
     <!-- Footer Placeholder -->
     <div id="footer"></div>
 
