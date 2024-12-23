@@ -31,6 +31,11 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .container p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
         .form-control {
             border-radius: 5px;
             border: 1px solid #8A6F5A;
@@ -44,6 +49,23 @@
         .btn-primary {
             background-color: #6D4F3A;
             border: none;
+        }
+
+        .donation-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #FFF8F0;
+            border: 1px solid #8A6F5A;
+            border-radius: 8px;
+        }
+
+        .donation-info h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .donation-info p {
+            font-size: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -61,7 +83,6 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
-                // Initialize Bootstrap Dropdowns
                 const dropdownTriggerList = document.querySelectorAll('.dropdown-toggle');
                 dropdownTriggerList.forEach(dropdown => {
                     new bootstrap.Dropdown(dropdown);
@@ -73,7 +94,45 @@
     <main>
         <div class="container">
             <h1>Contact Us</h1>
-            <p>We'd love to hear from you!</p>
+            <p>
+                We'd love to hear from you! Whether it's a suggestion, contribution, or just a hello, feel free to reach out.
+            </p>
+
+            <h2>Email</h2>
+            <p><strong>Email:</strong> <a href="mailto:kutubkhanaproject@gmail.com">kutubkhanaproject@gmail.com</a></p>
+
+            <div class="donation-info">
+                <h2>Support Us</h2>
+                <p>
+                    The Maktaba Project is funded out of pocket and is provided completely free of charge. Your donations can greatly help us maintain and expand this initiative.
+                </p>
+                <p><strong>JazzCash:</strong> <span>0335 933 7333</span></p>
+            </div>
+
+            <h2 class="mt-4">Send Us a Message</h2>
+            <form action="mailto:kutubkhanaproject@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="topic" class="form-label">Topic</label>
+                    <input type="text" class="form-control" id="topic" name="topic" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Description (500 words max)</label>
+                    <textarea class="form-control" id="message" name="message" rows="8" maxlength="500" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </main>
 
