@@ -16,16 +16,13 @@
         }
         .container {
             margin-top: 40px;
-            max-width: 1200px;
+            max-width: 900px;
             padding: 20px;
             box-sizing: border-box;
-        }
-        .submission-content {
-            background-color: #fffaf0;
-            padding: 30px;
+            background: #FAF3E0;
             border: 1px solid #d2b48c;
             border-radius: 10px;
-            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #6b4226;
@@ -34,9 +31,18 @@
         }
         p {
             text-align: justify;
+            line-height: 1.8;
         }
         form label {
             font-weight: bold;
+        }
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #8A6F5A;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #6D4F3A;
         }
         .btn-primary {
             background-color: #6b4226;
@@ -46,6 +52,14 @@
             background-color: #8b5a2b;
             border-color: #8b5a2b;
         }
+        .file-upload {
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -54,39 +68,55 @@
 
     <!-- Main Content -->
     <main>
-    <div class="container">
-        <h2>Submit Your Urdu Work</h2>
-        <div class="submission-content">
-            <p>
-                We are thrilled to invite you to share your Urdu writings with <strong>The Maktaba Project</strong>. Whether it's poetry, prose, essays, or academic works, we are excited to help publish your valuable contributions.
-            </p>
-            <p>
-                Please fill out the form below, and we will review your submission.
-            </p>
-            <form action="mailto:KutubKhanaProject@gmail.com" method="post" enctype="text/plain">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name" required>
+        <div class="container">
+            <h2>Submit Your Urdu Work</h2>
+            <div class="submission-content">
+                <p>
+                    We are thrilled to invite you to share your Urdu writings with <strong>The Maktaba Project</strong>. Whether it's poetry, prose, essays, or academic works, we are excited to help publish your valuable contributions.
+                </p>
+                <p>
+                    Please fill out the form below, and we will review your submission.
+                </p>
+
+                <form action="mailto:KutubKhanaProject@gmail.com" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="workName" class="form-label">Name of the Work</label>
+                        <input type="text" class="form-control" id="workName" name="Work Name" placeholder="Title of your work" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description of the Work</label>
+                        <textarea class="form-control" id="description" name="Description" rows="4" maxlength="100" placeholder="Brief description of your work's purpose (100 words max)" required></textarea>
+                    </div>
+                    <div class="file-upload mb-3">
+                        <label for="fileUpload" class="form-label">Upload Your Work</label>
+                        <input type="file" class="form-control" id="fileUpload" name="File" accept=".pdf,.doc,.docx,.txt" required>
+                        <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX, TXT</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <p class="mt-3">
+                    Please ensure your submission adheres to copyright laws. We cannot accept copyrighted works without proper authorization or proof of permission from the owner.
+                </p>
+
+                <div class="contact-info mt-4 text-center">
+                    <p>
+                        Alternatively, you can email us directly at: <br>
+                        <strong>
+                            <a href="mailto:KutubKhanaProject@gmail.com">KutubKhanaProject@gmail.com</a>
+                        </strong>
+                    </p>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Your Email</label>
-                    <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="workName" class="form-label">Name of the Work</label>
-                    <input type="text" class="form-control" id="workName" name="Work Name" placeholder="Title of your work" required>
-                </div>
-                <div class="mb-3">
-                    <label for="description" class="form-label">Description of the Work</label>
-                    <textarea class="form-control" id="description" name="Description" rows="4" placeholder="Brief description of your work's purpose" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <p class="mt-3">
-                Please ensure your submission adheres to copyright laws. We cannot accept copyrighted works without proper authorization.
-            </p>
+            </div>
         </div>
-    </div>
     </main>
 
     <!-- Footer Placeholder -->

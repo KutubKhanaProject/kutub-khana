@@ -16,16 +16,13 @@
         }
         .container {
             margin-top: 40px;
-            max-width: 1200px;
+            max-width: 900px;
             padding: 20px;
             box-sizing: border-box;
-        }
-        .public-works-content {
-            background-color: #fffaf0;
-            padding: 30px;
+            background: #FAF3E0;
             border: 1px solid #d2b48c;
             border-radius: 10px;
-            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #6b4226;
@@ -38,15 +35,34 @@
         }
         p {
             text-align: justify;
+            line-height: 1.8;
         }
         ul {
+            margin-top: 10px;
+            margin-bottom: 20px;
             padding-left: 20px;
         }
-        a {
-            color: #8b4513;
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #8A6F5A;
         }
-        a:hover {
-            text-decoration: underline;
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #6D4F3A;
+        }
+        .btn-primary {
+            background-color: #6D4F3A;
+            border: none;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -56,35 +72,56 @@
 
     <!-- Main Content -->
     <main>
-    <div class="container">
-        <h2>Submit or Request Public Works</h2>
-        <div class="public-works-content">
+        <div class="container">
+            <h2>Submit or Request Public Works</h2>
+
             <p>
-                If you would like to submit or request a specific text, document, or public work to be included in <strong>The Maktaba Project</strong>, please reach out to us.
+                If you would like to submit or request a specific text, document, or public work to be included in <strong>The Maktaba Project</strong>, please fill out the form below. 
             </p>
             <p>
-                Kindly email us at:  
-                <strong>
-                    <a href="mailto:KutubKhanaProject@gmail.com">KutubKhanaProject@gmail.com</a>
-                </strong>
-            </p>
-            <h4>Copyright Notice</h4>
-            <p>
-                Please ensure that any work you submit adheres to relevant copyright laws. We cannot accept works still under copyright protection without proper authorization or proof of rights clearance.
-            </p>
-            <p>
-                By submitting a work, you confirm that:
+                <strong>Copyright Notice:</strong><br>
+                Please ensure that any work you submit adheres to relevant copyright laws. We cannot publish works still under copyright protection unless:
             </p>
             <ul>
-                <li>You own the rights to the work, or</li>
-                <li>The work is in the public domain, or</li>
-                <li>You have explicit permission from the rights holder to share the work.</li>
+                <li>The work is in the public domain.</li>
+                <li>You own the rights to the work.</li>
+                <li>You have explicit written permission from the rights holder.</li>
             </ul>
             <p>
-                Thank you for contributing to <strong>The Maktaba Project</strong> and helping us preserve valuable texts!
+                By submitting a work, you agree that you have the right to share it under the conditions mentioned above.
             </p>
+
+            <h4 class="mt-4">Submission Form</h4>
+            <form action="mailto:kutubkhanaproject@gmail.com" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="textName" class="form-label">Text Name</label>
+                    <input type="text" class="form-control" id="textName" name="textName" placeholder="Enter the name of the text" required>
+                </div>
+                <div class="mb-3">
+                    <label for="textAuthor" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="textAuthor" name="textAuthor" placeholder="Enter the author's name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Brief Description (100 words max)</label>
+                    <textarea class="form-control" id="description" name="description" rows="4" maxlength="100" placeholder="Provide a brief description of the work" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="fileUpload" class="form-label">Upload File</label>
+                    <input type="file" class="form-control" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx,.txt" required>
+                    <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX, TXT</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div class="contact-info mt-4">
+                <p>
+                    Alternatively, you can email us directly at: <br>
+                    <strong>
+                        <a href="mailto:kutubkhanaproject@gmail.com">KutubKhanaProject@gmail.com</a>
+                    </strong>
+                </p>
+            </div>
         </div>
-    </div>
     </main>
 
     <!-- Footer Placeholder -->
