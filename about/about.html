@@ -44,6 +44,36 @@
             padding-bottom: 5px;
         }
 
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+            text-align: center;
+            color: #6D4F3A;
+        }
+
+        .image-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-section img {
+            width: 25%; /* Image is now 25% of its original width */
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #8A6F5A;
+        }
+
+        .image-section p {
+            font-size: 0.9rem;
+            margin-top: 8px;
+            color: #6D4F3A;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -56,6 +86,10 @@
             .section-header {
                 font-size: 1.2rem;
             }
+
+            .image-section img {
+                width: 50%; /* Slightly larger on smaller screens for clarity */
+            }
         }
     </style>
 </head>
@@ -67,7 +101,6 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
-                // Initialize Bootstrap Dropdowns
                 const dropdownTriggerList = document.querySelectorAll('.dropdown-toggle');
                 dropdownTriggerList.forEach(dropdown => {
                     new bootstrap.Dropdown(dropdown);
@@ -79,17 +112,71 @@
     <main>
         <div class="container">
             <h1>About The Maktaba Project</h1>
+
+            <div class="quote">
+                “My dear man, when Urdu Bazaar is no more, where is Urdu?” — <strong>Mirza Ghalib</strong>
+            </div>
+
             <p>
-                Welcome to <strong>The Maktaba Project</strong>, a digital library dedicated to preserving and sharing Urdu literature. Our mission is to create a platform where readers, scholars, and enthusiasts can access timeless works of Urdu poetry, prose, and translations.
+                Dehli’s Urdu Bazaar, the subject of this prophetic Ghalib quote, is breathing its final breaths. 40 years ago,
+                the market boasted 80 Urdu bookstores but has barely 6 as of December 2024. Furthermore,
+                shopkeepers who used to see long lines for new publications are now struggling to sell even a book a day.
+                The publications have stopped almost completely. The decline of Dehli’s Urdu bazaar, as Mirza Ghalib
+                foresaw nearly 200 years ago, is a symptom of a literary tradition in freefall.
             </p>
+
+            <h2 class="section-header">Our Heritage</h2>
+            <p>
+                The Maktaba project borrows its name from the iconic <strong>Maktaba Jamia Limited</strong>, founded by Dr. Zakir
+                Hussain in 1922. Once a leading publisher of Urdu literature (over 6000 books published), it closed its
+                doors in September 2023 after years of neglect and a lack of funding.
+            </p>
+
+            <div class="image-section">
+                <img src="../jamia-maktab-delhi.jpg" alt="Maktaba Jamia Limited Bookstore">
+                <p><em>The iconic Maktaba Jamia Limited in its final days.</em></p>
+            </div>
+
+            <h2 class="section-header">Our Mission</h2>
+            <p>
+                We are two teenagers committed to preserving the literary tradition Maktaba Jamia once represented. We
+                believe that Urdu literature’s best path to survival is to embrace the technological age, which provides a
+                golden opportunity to store large amounts of knowledge with limited costs. With <strong>The Maktaba Project</strong>, we
+                hope to create an open-source, free-of-cost library containing a comprehensive and easily navigable
+                collection of Urdu books, regardless of genre or topic.
+            </p>
+
             <h2 class="section-header">Our Vision</h2>
             <p>
-                We aim to build a freely accessible digital archive that ensures the preservation of cultural heritage while fostering new creative contributions in Urdu literature.
+                This website is to be a digital ebook library that allows users to easily read and/or download public domain texts in
+                Urdu. We are particularly inspired by sites like the <strong>Gutenberg Project</strong> which make it easier for people to access literary
+                texts free of charge.
             </p>
-            <h2 class="section-header">Join Us</h2>
+
+            <div class="quote">
+                “Knowledge is the bedrock of society”
+            </div>
+
             <p>
-                Whether you're an author, translator, or reader, we welcome your contributions and feedback. Help us grow and improve this literary treasure trove.
+                These texts provide a variety of religious, social, and philosophical thought not found in any language. They describe
+                emotions and cultural experiences that cannot be translated.
             </p>
+
+            <h2 class="section-header">Help Us</h2>
+            <p>
+                We are always looking to expand our collection. Providing unique scans or even requesting the publication
+                of your own original work will be of exceptional use to us in our mission. Furthermore, we can benefit
+                greatly from work involving translation (into, or from Urdu). Sorting our exceptionally large collection can
+                also help. Even ideas or requests can help us make this website better. We really mean it, we’re like two
+                people right now and we need all the help we can get.
+            </p>
+
+            <div class="contact-info">
+                <strong>Contact Us:</strong><br>
+                Email: <a href="mailto:KutubKhanaProject@gmail.com">KutubKhanaProject@gmail.com</a><br>
+                WhatsApp: +92 335 933 7333<br>
+                Instagram: <a href="https://instagram.com/salehzamanmehdi" target="_blank">@salehzamanmehdi</a>
+            </div>
         </div>
     </main>
 
