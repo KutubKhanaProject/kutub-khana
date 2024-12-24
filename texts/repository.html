@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' http://127.0.0.1:5000;">
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self';">
     <title>Repository - The Maktaba Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -66,43 +66,42 @@
 
     <!-- Main Content -->
     <main>
-    <div class="container">
-        <h1>Repository</h1>
-        <p>Explore our carefully curated collection of Urdu literature, translations, and timeless works.</p>
-        
-        <!-- Search Bar -->
-        <div class="mb-4">
-            <input type="text" id="searchBar" class="form-control" placeholder="Search by title, author, or topic...">
-            <button class="btn btn-primary mt-2" onclick="fetchTexts()">Search</button>
+        <div class="container">
+            <h1>Repository</h1>
+            <p>Explore our carefully curated collection of Urdu literature, translations, and timeless works.</p>
+            
+            <!-- Search Bar -->
+            <div class="mb-4">
+                <input type="text" id="searchBar" class="form-control" placeholder="Search by title, author, or topic...">
+                <button class="btn btn-primary mt-2" onclick="fetchTexts()">Search</button>
+            </div>
+
+            <!-- Filters -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <input type="text" id="filterAuthor" class="form-control" placeholder="Filter by Author">
+                </div>
+                <div class="col-md-4">
+                    <input type="number" id="filterYear" class="form-control" placeholder="Filter by Year">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="filterSubject" class="form-control" placeholder="Filter by Subject">
+                </div>
+                <div class="col-md-12 mt-2">
+                    <button class="btn btn-secondary" onclick="fetchTexts()">Apply Filters</button>
+                </div>
+            </div>
+
+            <!-- Grid Display -->
+            <div id="textsGrid" class="row row-cols-1 row-cols-md-3 g-4"></div>
+
+            <!-- Pagination Controls -->
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-outline-primary" onclick="changePage(-1)">Previous</button>
+                <span id="pageIndicator">Page 1</span>
+                <button class="btn btn-outline-primary" onclick="changePage(1)">Next</button>
+            </div>
         </div>
-
-        <!-- Filters -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <input type="text" id="filterAuthor" class="form-control" placeholder="Filter by Author">
-            </div>
-            <div class="col-md-4">
-                <input type="number" id="filterYear" class="form-control" placeholder="Filter by Year">
-            </div>
-            <div class="col-md-4">
-                <input type="text" id="filterSubject" class="form-control" placeholder="Filter by Subject">
-            </div>
-            <div class="col-md-12 mt-2">
-                <button class="btn btn-secondary" onclick="fetchTexts()">Apply Filters</button>
-            </div>
-        </div>
-
-        <!-- Grid Display -->
-        <div id="textsGrid" class="row row-cols-1 row-cols-md-3 g-4"></div>
-
-        <!-- Pagination Controls -->
-        <div class="d-flex justify-content-between mt-4">
-            <button class="btn btn-outline-primary" onclick="changePage(-1)">Previous</button>
-            <span id="pageIndicator">Page 1</span>
-            <button class="btn btn-outline-primary" onclick="changePage(1)">Next</button>
-        </div>
-    </div>
-
     </main>
 
     <!-- Include Footer -->
