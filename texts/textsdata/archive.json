@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Oliver Twist",
+        "author": "Charles Dickens",
+        "year": 1837,
+        "language": "English",
+        "subject": "Fiction",
+        "thumbnail_url": "https://archive.org/services/img/oliver_twist",
+        "read_url": "https://archive.org/stream/oliver_twist",
+        "download_url": "https://archive.org/download/oliver_twist/oliver_twist.pdf"
+    },
+    {
+        "id": 2,
+        "title": "Great Expectations",
+        "author": "Charles Dickens",
+        "year": 1861,
+        "language": "English",
+        "subject": "Fiction",
+        "thumbnail_url": "https://archive.org/services/img/great_expectations",
+        "read_url": "https://archive.org/stream/great_expectations",
+        "download_url": "https://archive.org/download/great_expectations/great_expectations.pdf"
+    },
+    {
+        "id": 3,
+        "title": "Urdu Poetry Collection",
+        "author": "Various",
+        "year": 1950,
+        "language": "Urdu",
+        "subject": "Poetry",
+        "thumbnail_url": "https://archive.org/services/img/urdu_poetry",
+        "read_url": "https://archive.org/stream/urdu_poetry",
+        "download_url": "https://archive.org/download/urdu_poetry/urdu_poetry.pdf"
+    }
+]
