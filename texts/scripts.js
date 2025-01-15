@@ -8,7 +8,7 @@ function fetchTexts() {
     const year = document.getElementById('filterYear').value;
     const subject = document.getElementById('filterSubject').value.toLowerCase();
 
-    fetch('textsdata/archive.json') // Adjusted path for nested structure
+    fetch('minimal_urdu_texts.json') // Adjusted path for nested structure
         .then(response => response.json())
         .then(data => {
             jsonData = data;
