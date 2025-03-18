@@ -79990,5 +79990,101 @@
         "thumbnail_url": "https://archive.org/services/img/02_20200201_20200201",
         "read_url": "https://archive.org/stream/02_20200201_20200201",
         "download_url": "https://archive.org/download/02_20200201_20200201/02 مدنی فلاحی ریاست کی بنیادیں.pdf"
+    },
+    {
+        "id": "ArabicLanguageCourseBooks",
+        "title": "Arabic Language Course Books",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/ArabicLanguageCourseBooks",
+        "read_url": "https://archive.org/stream/ArabicLanguageCourseBooks",
+        "download_url": "https://archive.org/download/ArabicLanguageCourseBooks/Madina_Book1_Arabic_Text.pdf"
+    },
+    {
+        "id": "MasnaviRumiWithUrduTranslationByQaziSajjad",
+        "title": "Masnavi Rumi with Urdu translation by Qazi Sajjad",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/MasnaviRumiWithUrduTranslationByQaziSajjad",
+        "read_url": "https://archive.org/stream/MasnaviRumiWithUrduTranslationByQaziSajjad",
+        "download_url": "https://archive.org/download/MasnaviRumiWithUrduTranslationByQaziSajjad/Masnavi_01.pdf"
+    },
+    {
+        "id": "TareekhIbneKhaldoon-13Volumes-WithMuqaddimah-urdu",
+        "title": "Tareekh Ibne Khaldoon - (13 Volumes) - with Muqaddimah - [URDU]",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/TareekhIbneKhaldoon-13Volumes-WithMuqaddimah-urdu",
+        "read_url": "https://archive.org/stream/TareekhIbneKhaldoon-13Volumes-WithMuqaddimah-urdu",
+        "download_url": "https://archive.org/download/TareekhIbneKhaldoon-13Volumes-WithMuqaddimah-urdu/TareekhIbneKhaldoon-001-muqaddimah.pdf"
+    },
+    {
+        "id": "QuranMajeed-15Lines-PakistaniPrint",
+        "title": "Quran Majeed - 15 Lines - Pakistani Print",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/QuranMajeed-15Lines-PakistaniPrint",
+        "read_url": "https://archive.org/stream/QuranMajeed-15Lines-PakistaniPrint",
+        "download_url": "https://archive.org/download/QuranMajeed-15Lines-PakistaniPrint/QuranMajeed-15Lines-PakistaniPrint.pdf"
+    },
+    {
+        "id": "SharahSahihMuslimUrduByAllamaGhulamRasoolSaeedi",
+        "title": "Sharah Sahih Muslim Urdu by Allama Ghulam Rasool Saeedi",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/SharahSahihMuslimUrduByAllamaGhulamRasoolSaeedi",
+        "read_url": "https://archive.org/stream/SharahSahihMuslimUrduByAllamaGhulamRasoolSaeedi",
+        "download_url": "https://archive.org/download/SharahSahihMuslimUrduByAllamaGhulamRasoolSaeedi/SharhaMuslimJild1.pdf"
+    },
+    {
+        "id": "KashfAl-mahjooburduTranslationByAllamaFazluddinGohar",
+        "title": "Kashf al-Mahjoob (Urdu translation by Allama Fazluddin Gohar)",
+        "year": "2010-01-01T00:00:00Z",
+        "thumbnail_url": "https://archive.org/services/img/KashfAl-mahjooburduTranslationByAllamaFazluddinGohar",
+        "read_url": "https://archive.org/stream/KashfAl-mahjooburduTranslationByAllamaFazluddinGohar",
+        "download_url": "https://archive.org/download/KashfAl-mahjooburduTranslationByAllamaFazluddinGohar/Kashf-ul-Mahjoob.pdf"
+    },
+    {
+        "id": "dvtaaaa1_10",
+        "title": "dvtaaaa1_10",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/dvtaaaa1_10",
+        "read_url": "https://archive.org/stream/dvtaaaa1_10",
+        "download_url": "https://archive.org/download/dvtaaaa1_10/1.pdf"
+    },
+    {
+        "id": "RiazUsSaliheen-UrduTarjamahByShaykhShamsuddin",
+        "title": "Riaz Us Saliheen - Urdu Tarjamah By Shaykh Shamsuddin",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/RiazUsSaliheen-UrduTarjamahByShaykhShamsuddin",
+        "read_url": "https://archive.org/stream/RiazUsSaliheen-UrduTarjamahByShaykhShamsuddin",
+        "download_url": "https://archive.org/download/RiazUsSaliheen-UrduTarjamahByShaykhShamsuddin/RiazUsSaliheen-Vol1-UrduTarjamahByShaykhShamsuddin.pdf"
+    },
+    {
+        "id": "HayatUsSahaba-urdu-ByShaykhMuhammadYusufKandhelvir.a",
+        "title": "Hayat Us Sahaba - (Urdu) - by Shaykh Muhammad Yusuf Kandhelvi (r.a)",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/HayatUsSahaba-urdu-ByShaykhMuhammadYusufKandhelvir.a",
+        "read_url": "https://archive.org/stream/HayatUsSahaba-urdu-ByShaykhMuhammadYusufKandhelvir.a",
+        "download_url": "https://archive.org/download/HayatUsSahaba-urdu-ByShaykhMuhammadYusufKandhelvir.a/HayatUsSahabaurdu-part1BySheikhMuhammadYusufKandhelvir.a.pdf"
+    },
+    {
+        "id": "GhunyatAl-talibeenUrduTranslation",
+        "title": "Ghunyat al-Talibeen Urdu translation",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/GhunyatAl-talibeenUrduTranslation",
+        "read_url": "https://archive.org/stream/GhunyatAl-talibeenUrduTranslation",
+        "download_url": "https://archive.org/download/GhunyatAl-talibeenUrduTranslation/Ghunyat-ut-Talibeen-ur.pdf"
+    },
+    {
+        "id": "GulistanByShaykhSaadiFarsiWithUrduTranslation",
+        "title": "Gulistan by Shaykh Saadi, Farsi with Urdu translation",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/GulistanByShaykhSaadiFarsiWithUrduTranslation",
+        "read_url": "https://archive.org/stream/GulistanByShaykhSaadiFarsiWithUrduTranslation",
+        "download_url": "https://archive.org/download/GulistanByShaykhSaadiFarsiWithUrduTranslation/Gulistan-ur.pdf"
+    },
+    {
+        "id": "Tazkirat-ulAuliyaByAttarurduTranslation",
+        "title": "Tazkirat-ul Auliya by Attar (Urdu translation)",
+        "year": "Unknown",
+        "thumbnail_url": "https://archive.org/services/img/Tazkirat-ulAuliyaByAttarurduTranslation",
+        "read_url": "https://archive.org/stream/Tazkirat-ulAuliyaByAttarurduTranslation",
+        "download_url": "https://archive.org/download/Tazkirat-ulAuliyaByAttarurduTranslation/00348_TAZKIRAT-UL-AULIA-ur.pdf"
     }
 ]

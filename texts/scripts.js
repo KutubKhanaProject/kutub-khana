@@ -6,7 +6,7 @@ function fetchTexts() {
     const searchQuery = document.getElementById('searchBar').value.toLowerCase();
     const year = document.getElementById('filterYear').value;
 
-    fetch('minimal_urdu_texts.json')
+    fetch('urdu_texts_with_authors.json')
         .then(response => response.json())
         .then(data => {
             jsonData = data;
